@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>Pixel Art Maker!</title>
+    <meta name="description" content="Udacity project no. 3: Pixel Art Maker">
+    <meta name="author" content="Jan Varmuža">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <div class="infoPanel flexBox">
+      <div class="closePanelButton btn">close</div>
+      <h3>Welcome, dear friend!</h3>
+      <h4>Instructions - How to draw</h4>
+      <ol>
+        <li>Set the size of the Canvas and click the <span class="btn">Create the Canvas button</span></li>
+        <li>Pick a colour by clicking on the black stripe</li>
+        <li>Now, you can click individual cells to colour them</li>
+        <hr>
+        <li class="infoPanelNotes">By doubleclicking you can erase a cell in question</li>
+        <li class="infoPanelNotes">If you find the grid lines obtrusive, hit the <span class="btn">Grid ON/OFF</span> button</li>
+        <li class="infoPanelNotes">If you don't like your work, erase it by the <span class="btn">Rub Off the Canvas</span> button</li>
+        <li class="infoPanelNotes">To bring this panel back on, click the <i class="infoButton fas fa-info-circle"></i> icon or reload the page</li>
+      </ol>
+    </div>
+
+    <h1>Lab: Pixel Art Maker</h1>
+
+    <h2>Choose Grid Size</h2>
+
+    <form id="sizePicker">
+      Grid Height:
+      <input type="number" id="input_height" name="height" min="1" max="40" value="10">
+      Grid Width:
+      <input type="number" id="input_width" name="width" min="1" max="40" value="10">
+      <input class="btn" type="submit" value="Create the Canvas">
+      <input id="reset_btn" type="button" class="btn" value="Reset the Size">
+    </form>
+
+    <h2>Pick A Color</h2>
+
+    <div class="flexBox">
+      <input type="color" id="colorPicker" class="btn">
+      <button id="reloadPage" class="btn">Reload the page</button>
+    </div>
+
+    <h2>Design Canvas</h2>
+
+    <div class="flexBox">
+      <button id="grid_switch" class="btn">Grid ON / OFF</button>
+      <button id="erase_grid" class="btn">Rub off the Canvas</button>
+      <div id='info'><i class="infoButton fas fa-info-circle"></i></div>
+    </div>
+
+    <!-- ////// here comes the grid ////// -->
+    <div id="gridLocation" class="flexBox">
+      <div id="runningPixel"></div>
+      <p>Your creativity will be displayed here</p>
+    </div>
+    <table id="pixel_canvas">
+    </table>
+    <!-- /////////////////////////////////// -->
+
+    <script src="designs.js"></script>
+    
+  </body>
+</html>

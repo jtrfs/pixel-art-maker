@@ -1,0 +1,175 @@
+body { 
+  text-align: center; 
+  background-color: #ddd; 
+  background: linear-gradient(#fff, #888);
+  min-height: 100vh;
+  margin: 0;
+  overflow-y: scroll; }
+
+div.infoPanel {
+/*   display: none; */
+  flex-direction: column;
+  height: 80%;
+  width: 70%;
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: rgba(138, 65, 216, 0.8);
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  z-index: 2;
+  color: white;
+  line-height: 2rem;
+  overflow: hidden; }
+  
+h3 {
+  font-size: 2.5rem;
+  font-family: Monoton;
+  font-weight: normal;
+  margin-top: 70px; }
+
+h4 {
+  position: relative;
+  font-size: 1.2rem;
+  font-variant: small-caps;
+  font-family: sans-serif; }
+
+h4:after {
+  content: "";
+  position: absolute;
+  left:0;
+  bottom: 6px;
+  width: 100%;
+  border-width: 0 0 2px;
+  border-style: solid; }
+
+li {
+  text-align: left;
+  font-size: 0.9rem;
+  font-family: sans-serif; }
+
+hr { border-color: rgba(255, 255, 216, 0.2); }
+
+.closePanelButton {
+  background-color: red;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 1rem;
+  transition: all ease-in slow; }
+
+.closePanelButton:hover {
+  border: 2px solid #4c1a81;
+  padding: 2px 5px;
+  box-shadow: 2px 2px 15px white, -2px -2px 15px white;
+  cursor: pointer; }
+
+.infoPanelNotes {
+  list-style-type: none;
+  color: #e6e6e6;
+  font-size: 0.8rem;
+  font-style: oblique; }
+
+h1 {
+  font-family: Monoton;
+  font-size: 70px;
+  margin: 0.2em; 
+  color: #4c1a81;
+  text-shadow: 4px 4px 7px white, 5px 5px 10px black; }
+
+.infoButton {
+  font-size: 1.6em;
+  color: white;
+  background-color: #4c1a81;
+  border: 2px solid #4c1a81;
+  border-radius: 50%; }
+
+.infoButton:hover {
+  background-color: red;
+  border: 2px solid red;
+  cursor: pointer; }
+
+h2 { 
+  margin: 1em 0 0.25em; 
+  color: #4c1a81; 
+  text-shadow: 2px 2px 1px white; }
+
+h2:first-of-type { margin-top: 0.5em; }
+
+input[type=number] { width: 6em; }
+
+.flexBox {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#gridLocation {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-color: gray;
+  margin: 30px auto; }
+
+p {
+  width: 150px;
+  line-height: 30px;
+  color: white;
+  font-variant: small-caps;
+  text-shadow: 1px 1px 2px black; }
+
+#runningPixel {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  background-color: red;
+  animation-name: movingPixel;
+  animation-duration: 4s;
+  animation-iteration-count: infinite; }
+
+@keyframes movingPixel {
+    0%   {left:2px; top:2px;}
+    25%  {left:178px; top:2px; background-color: blue;}
+    50%  {left:178px; top:178px; background-color: green;}
+    75%  {left:2px; top:178px; background-color: yellow;}
+    100% {left:2px; top:2px;} 
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto; 
+  background-color: #eee;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 3px solid black; }
+
+tr { height: 20px;}
+
+td { width: 20px; }
+
+.visible_grids { border: 1px solid black; }
+
+.btn {
+  background-color: #4c1a81;
+  color: white;
+  padding: 5px 8px;
+  border-style: none;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 5px; }
+
+#reset_btn { visibility: hidden; }
+
+input[type=color] {
+  width: 150px;
+  height: 30px;
+  padding: 0;
+  outline: none;
+  background: transparent; }
+
+
+ @media screen and (max-width: 900px) {
+   .infoPanel{ min-width: 630px;}
+  }
