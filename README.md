@@ -1,4 +1,4 @@
-# Pixel Art Maker Project :art:
+<img src="https://github.com/jtrfs/pixel-art-maker/blob/master/pixel-art-maker.png" width="400px">
 
 ## Project Rubric
 Review the Pixel Art Maker project [rubric](https://review.udacity.com/#!/rubrics/641/view) carefully, and refer to it often while you build the project. If you want additional feedback, post in the course forums or Slack.
