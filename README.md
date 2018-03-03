@@ -1,4 +1,4 @@
-<img src="https://github.com/jtrfs/pixel-art-maker/blob/master/pixel-art-maker.png" width="400px">
+# Pixel Art Maker :art:
 
 ## Project Rubric
 Review the Pixel Art Maker project [rubric](https://review.udacity.com/#!/rubrics/641/view) carefully, and refer to it often while you build the project. If you want additional feedback, post in the course forums or Slack.
@@ -19,3 +19,7 @@ Now test it! When you're done, you should be able to create a canvas of any size
 :point_right: [Project Specification/Rubric](https://review.udacity.com/#!/rubrics/641/view)
 
 :point_right:[View Online](https://jtrfs.github.io/pixel-art-maker/)
+
+****
+![](https://github.com/jtrfs/pixel-art-maker/blob/master/pixel-art-maker.png)
+
