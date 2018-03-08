@@ -25,5 +25,3 @@ Now test it! When you're done, you should be able to create a canvas of any size
 
 ****
 ![](https://github.com/jtrfs/pixel-art-maker/blob/master/pixel-art-maker.png)
-
->>>>>>> d879cfb3ee70a28887239909cdbf953f98e1cfb0
