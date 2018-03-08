@@ -1,5 +1,7 @@
 # Pixel Art Maker :art:
 
+❗️**my NOTE**: color picker `<input type="color">` not working in Safari, in Chrome, Firefox it's fine.
+
 ## Project Rubric
 Review the Pixel Art Maker project [rubric](https://review.udacity.com/#!/rubrics/641/view) carefully, and refer to it often while you build the project. If you want additional feedback, post in the course forums or Slack.
 
@@ -13,8 +15,6 @@ Now, open up `design.js`. As you start writing your code, keep these three tasks
 3. **Set the size of the cross stitch canvas** as an N by M grid with the `makeGrid()` function. Use your knowledge of JavaScript loops to dynamically clear and create the table based on user input. Each cell should have an event listener that sets the background color of the cell to the selected color.
 
 Now test it! When you're done, you should be able to create a canvas of any size, choose a color using the color picker, and click on the canvas's table cells to set their color.
-
-❗️**NOTE**: color picker `<input type="color">` not working in Safari, in Chrome, Firefox it's fine.
 
 *****
 
