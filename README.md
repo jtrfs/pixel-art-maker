@@ -14,7 +14,7 @@ Now, open up `design.js`. As you start writing your code, keep these three tasks
 
 Now test it! When you're done, you should be able to create a canvas of any size, choose a color using the color picker, and click on the canvas's table cells to set their color.
 
-❗️**NOTE**: color picker not working in Safari, in Chrome, Firefox it's fine.
+❗️**NOTE**: color picker <input type="color"> not working in Safari, in Chrome, Firefox it's fine.
 
 *****
 
